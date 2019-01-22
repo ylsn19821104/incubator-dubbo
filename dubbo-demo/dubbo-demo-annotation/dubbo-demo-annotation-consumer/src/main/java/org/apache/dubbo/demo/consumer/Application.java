@@ -37,7 +37,7 @@ public class Application {
         context.start();
         DemoService service = context.getBean("demoServiceComponent", DemoServiceComponent.class);
         String hello = service.sayHello("world");
-        System.out.println("result :" + hello);
+        System.err.println("result :" + hello);
     }
 
     @Configuration
